@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9 - Semana 04</title>
+</head>
+
+<body>
+    <h1>Exercício 9 - Semana 04</h1>
+    <p>Use um switch para exibir mensagens diferentes com base em uma condição.</p>
+
+    <script>
+        escolha=parseInt(prompt("Jogo do bicho reverso. Escolha um número de 1 a 5 e sonhe com o animal escolhido."))
+
+        function Sonhar(animal) {
+            switch (animal) {
+                case 1:
+                    return "Avestruz"
+                case 2:
+                    return "Águia"
+                case 3:
+                    return "Burro"
+                case 4:
+                    return "Borboleta"
+                case 5:
+                    return "Cachorro"
+                default:
+                    return "..."
+            }            
+        }
+
+        alert("Você sonhará com o "+ Sonhar(escolha))
+
+    </script>
+
+</body>
+
+</html>
